@@ -1,0 +1,10 @@
+build/
+devel/
+install/
+*.log
+*.pyc
+*.swp
+build/
+devel/
+.vscode/
+*.pyc
