@@ -7,6 +7,10 @@
   <maintainer email="booman@todo.todo">booman</maintainer>
   <license>TODO: License declaration</license>
 
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>ament_index_python</depend>
+
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <test_depend>ament_lint_auto</test_depend>
