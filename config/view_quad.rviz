@@ -11,7 +11,6 @@ Panels:
         - /TF1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /TF1/Tree1/world_link1
       Splitter Ratio: 0.5
     Tree Height: 428
   - Class: rviz_common/Selection
@@ -76,6 +75,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        world_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Mass Properties:
         Inertia: false
         Mass: false
@@ -186,5 +189,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1268
-  X: 0
-  Y: 0
+  X: -32
+  Y: -32
