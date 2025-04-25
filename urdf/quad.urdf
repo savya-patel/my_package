@@ -5,12 +5,18 @@
 <robot xmlns="http://drake.mit.edu"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://drake.mit.edu ../../../../pods/drake/doc/drakeURDF.xsd" name="quadrotor">
-  <!--<link name="world_link"/>
-  <joint name="world_to_base" type="fixed">
-    <parent link="world_link"/>
-    <child  link="base_link"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-  </joint>-->
+  <link name="world_link"/>
+  <link name="world_link"/>
+<joint name="world_to_base" type="fixed">
+  <parent link="world_link"/>
+  <child  link="base_link"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<gazebo>
+  <fix_joint name="world_to_base"/>
+</gazebo>
+
   <link name="base_link">
     <inertial>
       <mass value="0.5"/>

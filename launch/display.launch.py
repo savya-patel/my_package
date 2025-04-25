@@ -50,7 +50,7 @@ def generate_launch_description():
             arguments=[
                 '0', '0', '0',  # x y z
                 '0', '0', '0',  # roll pitch yaw
-                'world',       # parent frame
+                'world_link',       # parent frame
                 'base_link'    # child frame
             ]
         ),
