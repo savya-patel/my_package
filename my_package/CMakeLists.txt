@@ -19,8 +19,8 @@ endif()
 
 # install your Python demo node
 install(PROGRAMS
-  scripts/psuedo_rplidar_node.py
-  scripts/world_maker_publisher.py
+  psuedo_rplidar_node.py
+  world_maker_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -37,11 +37,9 @@ install(
 )
 
 # install URDFs
-# install all your URDF/XACRO files
 install(
   DIRECTORY urdf
   DESTINATION share/${PROJECT_NAME}/urdf
-  FILES_MATCHING PATTERN "*.xacro" PATTERN "*.urdf"
 )
 
 # install meshes
