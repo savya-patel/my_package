@@ -31,6 +31,13 @@ install(
   DESTINATION share/${PROJECT_NAME}/
 )
 
+# Install config files
+install(
+  DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}/
+)
+
+
 # Install urdf files
 install(
   DIRECTORY urdf
